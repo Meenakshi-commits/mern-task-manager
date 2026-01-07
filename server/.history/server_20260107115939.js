@@ -4,11 +4,10 @@ import dotenv from "dotenv";
 import connectDB from "./config/db.js";
 
 dotenv.config();
-connectDB();
 
 const app = express();
 
-
+connectDB();
 
 // Middleware
 app.use(cors());
