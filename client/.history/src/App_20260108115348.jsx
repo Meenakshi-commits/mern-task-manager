@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getTasks, getTaskCount, createTask } from "./services/api";
+import { getTasks, getTaskCount, createTask } from "./api";
 
 function App() {
   const [tasks, setTasks] = useState([]);

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getTasks, getTaskCount, createTask } from "./services/api";
+import { getTasks, getTaskCount, createTask } from "./api";
 
 function App() {
   const [tasks, setTasks] = useState([]);
@@ -32,7 +32,7 @@ function App() {
 
   return (
     <div style={{ padding: "20px", maxWidth: "500px" }}>
-     <h1 className="text-white text-4xl font-bold">TaskManager</h1>
+     <h1 className="text-white text-4xl font-bold">T
 
       {/* Counts */}
       <p>Total: {count.total}</p>
