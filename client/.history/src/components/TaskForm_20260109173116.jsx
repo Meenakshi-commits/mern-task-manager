@@ -39,11 +39,9 @@ export default function TaskForm({ fetchTasks }) {
         onChange={(e) => setDescription(e.target.value)}
       />
 
-      <div className="flex justify-end">
-        <button className="bg-gradient-to-r from-gray-700 to-gray-800 text-white font-semibold px-6 py-2 rounded-lg hover:from-gray-800 hover:to-gray-900 transition-all duration-200 shadow-lg hover:shadow-xl active:scale-95">
-          Add Task
-        </button>
-      </div>
+      <button className="bg-gradient-to-r from-gray-700 to-gray-800 text-white font-semibold px-6 py-2 rounded-lg hover:from-gray-800 hover:to-gray-900 transition-all duration-200 shadow-lg hover:shadow-xl active:scale-95">
+        Add Task
+      </button>
     </form>
   );
 }

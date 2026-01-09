@@ -64,20 +64,16 @@ export default function TaskItem({ task, fetchTasks }) {
   }
 
   return (
-    <div className={`flex justify-between items-center p-3 rounded-lg mb-2 ${
-      task.completed 
-        ? "bg-white/20 opacity-75" 
-        : "bg-gradient-to-r from-blue-500/30 to-cyan-500/30 border-l-4 border-blue-500"
-    }`}>
+    <div className="flex justify-between items-center bg-white/30 p-3 rounded-lg mb-2">
       <div className="flex-1">
         <h3
           className={`font-semibold ${
-            task.completed ? "line-through text-gray-400" : "text-white font-bold"
+            task.completed ? "line-through text-gray-500" : ""
           }`}
         >
           {task.title}
         </h3>
-        <p className={`text-sm ${task.completed ? "text-gray-400" : "text-gray-100"}`}>{task.description}</p>
+        <p className="text-sm">{task.description}</p>
       </div>
 
       <div className="flex gap-2 ml-4">

@@ -19,7 +19,7 @@ export default function App() {
   const pending = tasks.length - completed;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-700 via-gray-500 to-gray-700 p-6">
+    <div className="min-h-screen bg-gradient-to-br from-gray-600 via-gray-600 to-gray-700 p-6">
       <h1 className="text-4xl font-bold text-center mb-12 text-white">
         Task Manager
       </h1>

@@ -19,19 +19,20 @@ export default function App() {
   const pending = tasks.length - completed;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-700 via-gray-500 to-gray-700 p-6">
-      <h1 className="text-4xl font-bold text-center mb-12 text-white">
-        Task Manager
-      </h1>
-      
+    <div className="min-h-screen bg-gradient-to-br from-gray-800 via-gray-600 to-gray-700 p-6">
       <div className="max-w-6xl mx-auto text-white">
-        <div className="flex justify-center items-start gap-8">
-          <div className="flex-1 max-w-lg">
-            <TaskForm fetchTasks={fetchTasks} />
-            <TaskList tasks={tasks} fetchTasks={fetchTasks} />
+        <div className="flex justify-between items-start gap-8 mb-8">
+          <div className="flex-1">
+            <h1 className="text-3xl font-bold mb-8">
+              Task Manager
+            </h1>
+            <div className="max-w-xl">
+              <TaskForm fetchTasks={fetchTasks} />
+              <TaskList tasks={tasks} fetchTasks={fetchTasks} />
+            </div>
           </div>
 
-          <div className="bg-white/20 backdrop-blur-lg p-6 rounded-xl shadow-lg w-72 h-fit sticky top-20">
+          <div className="bg-white/20 backdrop-blur-lg p-6 rounded-xl shadow-lg w-64">
             <h2 className="text-lg font-semibold mb-4 text-center">Statistics</h2>
             <div className="space-y-3">
               <div className="bg-gradient-to-r from-blue-500 to-blue-600 p-4 rounded-lg">
